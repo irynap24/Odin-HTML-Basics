@@ -1,18 +1,8 @@
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid blue;
-  padding: 10px;
+.header-img {
+  height: 450px;
+  width: auto;
 }
-
-.logo {
-  margin: 0;
-}
-
-.links {
-  display: flex;
-  gap: 10px;
-  text-decoration: none;
-  border: 2px solid red;
+.info-img {
+  height: 200px;
+  width: auto;
 }
