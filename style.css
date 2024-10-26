@@ -1,3 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap");
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 15px;
+}
+.header-links {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+  gap: 15px;
+  margin-bottom: 0px;
+}
+.header-logo {
+  margin-top: 15px;
+  color: #ced4da;
+  font-size: 24px;
+}
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 300px;
+  width: 400px;
+  margin: 100px 0px;
+}
+.main-text,
+.secondary-text {
+  color: #ced4da;
+}
+.main-text {
+  font-size: 48px;
+}
+.secondary-text {
+  font-size: 18px;
+}
 .header-img {
   height: 450px;
   width: auto;
@@ -5,4 +49,37 @@
 .info-img {
   height: 200px;
   width: auto;
+}
+q {
+  font-style: italic;
+}
+.header-links a {
+  text-decoration: none;
+  color: #adb5bd;
+  transition: color 0.3s ease, transform 0.3s ease; /* Only transitions color and scale */
+}
+.header-links a:hover {
+  color: #e9ecef;
+  transform: scale(1.05);
+}
+
+.header-links {
+  list-style: none;
+}
+button {
+  background-color: black;
+  color: #e6cce8;
+  padding: 12px 24px;
+  border: 2px solid #32004f;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: #11001c; /* Dark orchid on hover */
+  color: #fff; /* White text for contrast */
+  transform: translateY(-2px); /* Lift effect */
 }
