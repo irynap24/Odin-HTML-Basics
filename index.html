@@ -83,12 +83,25 @@
             <div class="main-text">Want to learn more?</div>
             <div class="secondary-text">Join our community of orchid enthusiasts!</div>
         </div>
-        <button class="signup">Sign up</button>
+        <button class="signup" onclick="toggleButtonText()">Sign up</button>
     </div>
     <hr class="footer-line">
     <div class="footer">
         <div class="footer-text">Inspired by 🧙‍♂️ The Odin Project | 2024</div>
     </div>
+    <script>
+        function toggleButtonText() {
+            // Select the button element
+            const button = document.querySelector('.signup');
+            // Toggle text between "Sign up" and "Thanks!"
+            if (button.textContent === "Sign up") {
+                button.textContent = "Thanks!";
+            }
+            else {
+                button.textContent = "Sign up"
+            }
+        }
+    </script>
 </body>
 
 </html>
